@@ -1,0 +1,46 @@
+
+Municipality
+Id MunicipalityName
+1	Kaunas
+2	Vilnius
+
+TaxRules
+Id	Rule
+1	Rule1
+2	Rule2
+
+MunicipalityRule
+Id	MunicipalityId TaxRuleId
+1	1				1
+2	2				2	
+
+MunicipalitySchedules
+Id	Period		
+1	Daily	
+2	Weekly
+3	Monthly	
+4	Yearly
+			
+FinancialYear
+Id	RangeFrom	RangeTo
+1	2020-01-01	2020-12-31
+2	2020-01-01	2020-01-31
+3	2020-05-01	2020-05-31
+4	2020-01-06	2020-01-12
+5	2020-01-01	null
+6	2020-12-25	null
+
+MunicipalityTaxDetails
+Id	TaxRuleId MunicipalitySchedulesId	FinancialYearId			Tax	
+1	1				1							null			null
+2	1				2							4				0.1
+3	1				3							2				0.2
+4	1				4							1				0.3
+5	2				1							5				0.1
+6	2				1							6				0.1
+7	2				2							null			null
+8	2				3							3				0.4
+9	2				4							1				0.2
+
+			
+
